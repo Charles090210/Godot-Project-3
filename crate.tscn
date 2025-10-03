@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dr4hsy1bii5jt"]
+
+[ext_resource type="Texture2D" uid="uid://djc3teu4r5ur6" path="res://PhysicsCharacter.png" id="2_ggnq6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_44j4e"]
+size = Vector2(18, 18)
+
+[node name="crate" type="RigidBody2D"]
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_44j4e")
+
+[node name="crateSprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_ggnq6")
